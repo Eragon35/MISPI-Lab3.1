@@ -5,6 +5,14 @@ import prog.Point
 import scala.io.StdIn
 
 object ReadFromConsole {
+  /**
+   * @param str - is incoming string
+   *            we splitting it by ' ' and trying to cast each element to float
+   *            if catching error we sout that data is incorrect and call function again
+   * @return Either:
+   *         Left(Point) if can cast each element to float and all values are valid
+   *         else we return Right(String) where we show the error
+   */
   def read(str: String) : Either[Point, String] = {
     try {
       val array = str.trim.replaceAll(",", ".").split(" ").map(x => x.toFloat)
@@ -20,7 +28,7 @@ object ReadFromConsole {
           Right("")
       }
     } catch {
-      case _: Exception => Console.err.println("Incorrect data")
+      case _: Exception => Console.err.println("Can't get number from you line")
         read(StdIn.readLine())
     }
   }
