@@ -15,7 +15,7 @@ object ReadFromConsole {
    */
   def read(str: String) : Either[Point, String] = {
     try {
-      val array = str.trim.replaceAll(",", ".").split(" ").map(x => x.toFloat)
+      val array = str.trim.replaceAll(",", ".").split(" ").map(x => x.toDouble)
       array match {
         case Array(x, _, _) if (x < -2) || (x > 2) => Right("X should be between [-2..2]")
         case Array(_, y, _) if (y <= -3) || (y >= 5) => Right("Y should be between (-3..5)")
