@@ -21,6 +21,6 @@ class HelloTests extends TestCase{
     "\n........................................." +
     "\n........................................."
 
-  def testGreetingTest(): Unit = assertEquals(Hello.greet(), template)
+  def testGreetingTest(): Unit = assertEquals(template, Hello.greet())
 
 }

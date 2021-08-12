@@ -23,13 +23,10 @@ object ReadFromConsole {
         case Array(_, _) | Array(_) | Array() => Right("You should input at least 3 number")
         case Array(x, y, r) => Left(Point(x, y, r.toInt))
         case Array(_*) => read(array.take(3).mkString(" "))
-        case _ =>
-          Console.err.println("Error during data processing")
-          Right("")
+        case _ => Right("Error during data processing")
       }
     } catch {
-      case _: Exception => Console.err.println("Can't get number from you line")
-        read(StdIn.readLine())
+      case e: Exception => Right("Can't get number from you line")
     }
   }
 }
