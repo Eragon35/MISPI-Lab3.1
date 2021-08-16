@@ -1,5 +1,3 @@
-package prog
-
 import scala.io.Source
 
 /**
@@ -7,12 +5,12 @@ import scala.io.Source
  */
 
 object Greeting {
-  private val asciiURL = "../resources/ascii.txt"
+  private val asciiURL = "resources/ascii.txt"
   private val name = "Antipin Arsentii"
 
   def hello(): String = {
     var greeting: String = s"$name's Computer engineer basics Lab № 3\n"
-    val source = Source.fromURL(getClass.getResource(asciiURL))
+    val source = Source.fromURL(asciiURL)
     greeting += source.getLines().mkString("\n")
     source.close()
     greeting

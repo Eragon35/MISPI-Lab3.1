@@ -1,6 +1,5 @@
 import junit.framework.TestCase.assertEquals
 import junit.framework.TestCase
-import prog.Greeting
 
 class GreetingTests extends TestCase{
   private val template: String = "Antipin Arsentii's Computer engineer basics Lab № 3" +

@@ -1,4 +1,3 @@
-package prog
 
 object ReadFromConsole {
   /**

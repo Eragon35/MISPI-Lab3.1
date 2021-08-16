@@ -1,4 +1,4 @@
-name := "MISPI-Lab3.1"
+name := "MISPI-Lab3.2"
 
 version := "0.1"
 

@@ -1,5 +1,3 @@
-package prog
-
 case class Point(x: Double, y: Double, r: Int) {
   def check(): Boolean = {
     if (x >= 0) {
