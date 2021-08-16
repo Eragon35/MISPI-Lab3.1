@@ -1,0 +1,38 @@
+<project name="MispLab3" default="run" basedir=".">
+
+    <property name="sources.dir" value="src" />
+    <property name="scala-source.dir" value="src/main/scala/prog" />
+    <property name="scala-test.dir" value="src/test/scala" />
+    <property name="build.dir" value="classes" />
+
+
+    <target name="compile" > +
+
+    </target>
+
+    <target name="build">
+    </target>
+
+    <target name="clean">
+
+    </target>
+
+    <target name="test"> +
+
+    </target>
+
+    <target name="native2ascii"> +
+
+    </target>
+
+    <target name="team">
+
+    </target>
+
+    <target name="diff">
+
+    </target>
+
+
+
+</project>

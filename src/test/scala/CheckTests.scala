@@ -1,5 +1,5 @@
 import junit.framework.TestCase
-import junit.framework.TestCase.{assertTrue, assertFalse}
+import junit.framework.TestCase.{assertFalse, assertTrue}
 import prog.Point
 
 class CheckTests extends TestCase {

@@ -1,7 +1,6 @@
 import junit.framework.TestCase.assertEquals
 import junit.framework.TestCase
-import prog.Point
-import prog.util.ReadFromConsole
+import prog.{Point, ReadFromConsole}
 
 class ReadTests extends TestCase{
 

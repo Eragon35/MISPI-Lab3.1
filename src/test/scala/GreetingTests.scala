@@ -1,8 +1,8 @@
 import junit.framework.TestCase.assertEquals
 import junit.framework.TestCase
-import prog.util.Hello
+import prog.Greeting
 
-class HelloTests extends TestCase{
+class GreetingTests extends TestCase{
   private val template: String = "Antipin Arsentii's Computer engineer basics Lab № 3" +
     "\n........................................." +
     "\n....................R...................." +
@@ -21,6 +21,6 @@ class HelloTests extends TestCase{
     "\n........................................." +
     "\n........................................."
 
-  def testGreetingTest(): Unit = assertEquals(template, Hello.greet())
+  def testGreetingTest(): Unit = assertEquals(template, Greeting.hello())
 
 }
